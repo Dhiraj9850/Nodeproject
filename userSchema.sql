@@ -1,0 +1,1 @@
+CREATE TABLE `user_manage`.`usertable` ( `id` INT NOT NULL AUTO_INCREMENT , `first_name` VARCHAR(40) NOT NULL , `last_name` VARCHAR(40) NOT NULL , `email` VARCHAR(40) NOT NULL , `phone` VARCHAR(20) NOT NULL , `comments` TEXT NOT NULL , `status` VARCHAR NOT NULL DEFAULT 'Active' , PRIMARY KEY (`id`)) ENGINE = InnoDB;

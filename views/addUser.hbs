@@ -1,0 +1,19 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Add New User</li>
+  </ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong><i class="bi bi-check-circle"></i> {{alert}}</strong>
+ 
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<h4 class="text-center my-3">Add user</h4>
+<form class="row g-3 needs-validation" method="POST" action="/adduser" novalidate>
+   {{>userForm}} 
+</form>
